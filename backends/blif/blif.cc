@@ -653,7 +653,7 @@ struct BlifBackend : public Backend {
 
 		std::vector<RTLIL::Module*> mod_list;
 
-		design->sort();
+		// design->sort();
 		for (auto module : design->modules())
 		{
 			if (module->get_blackbox_attribute() && !config.blackbox_mode)

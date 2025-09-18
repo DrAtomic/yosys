@@ -257,7 +257,7 @@ struct Ice40OptPass : public Pass {
 		}
 
 		design->optimize();
-		design->sort();
+		// design->sort();
 		design->check();
 
 		log_header(design, "Finished OPT passes. (There is nothing left to do.)\n");
